@@ -3,7 +3,7 @@ function justInvoke(fn) {
   return fn();
 };
 
-function setThisWithCall(fn){
+function setThisWithCall(fn, bob){
 //  calls and returns the function as a callback, and assigns this to be bob while passing an argument to the invoked function
-  return fn.call();
+  return fn.call(bob);
 }
