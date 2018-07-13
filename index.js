@@ -8,6 +8,6 @@ function setThisWithCall(fn, obj, arg){
   return fn.call(obj, arg);
 }
 
-function setThisWithApply(fn, obj, [args*]){
-  return fn.apply(obj, [args*]);
+function setThisWithApply(fn, obj, [age, hairColor]){
+  return fn.apply(obj, [age, hairColor]);
 };
