@@ -11,3 +11,7 @@ function setThisWithCall(fn, obj, arg){
 function setThisWithApply(fn, obj, [age, hairColor]){
   return fn.apply(obj, [age, hairColor]);
 };
+
+function returnNewFunctionOf() {
+
+};
