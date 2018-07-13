@@ -3,8 +3,7 @@ function justInvoke(fn) {
   return fn();
 };
 
-function setThisWithCall(fn){
+function setThisWithCall(fn, obj, arg){
 //  calls and returns the function as a callback, and assigns this to be bob while passing an argument to the invoked function
-  const bob = {name: "Bob"};
-  return fn.call(bob);
+  return fn.call(bob, arg);
 }
