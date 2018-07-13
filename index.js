@@ -12,6 +12,6 @@ function setThisWithApply(fn, obj, [age, hairColor]){
   return fn.apply(obj, [age, hairColor]);
 };
 
-function returnNewFunctionOf(fn) {
-  return fn;
+function returnNewFunctionOf(fn, arg) {
+  return fn.bind(arg);
 };
